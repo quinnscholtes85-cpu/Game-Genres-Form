@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Game genres</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+       background-color: #89CFF0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-section {
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    canvas {
+      display: block;
+      margin: 30px auto;
+      border: 1px solid #ccc;
+    }
+
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Game Genres list </h1>
+
+  <form>
+    <div class="form-section">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-section">
+      <label>Choose your favorite Game:</label>
+      
+    </div>
+
+    <div class="form-section">
+      <label>Select your game genres:</label>
+      <input type="checkbox" id="Horror" name="genres" value="Horror" />
+      <label for="Horror">Horror</label><br />
+      <input type="checkbox" id="Anime" name="genres" value="Anime" />
+      <label for="Anime">Anime</label><br />
+      <input type="checkbox" id="Manga" name="genres" value="Manga" />
+      <label for="Manga">Manga</label>
+    </div>
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  
+  <audio controls>
+    <source src="Men_I_Trust_-_Show_Me_How_(mp3.pm).mp3" type="audio/mpeg" />
+    </audio>
+
+  
+  <canvas id="myCanvas" width="200" height="150"></canvas>
+</body>
+</html>
